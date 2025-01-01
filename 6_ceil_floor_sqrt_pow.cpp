@@ -1,31 +1,30 @@
 #include <stdio.h>
-#include <conio.h>
-#include <locale.h>
 #include <math.h>
 
 main() {
-	setlocale(LC_ALL, "Turkish");
 	float x=2.7;
 	printf("x=%f \n\n", x);
-	x=floor(x);	//aþaðý yuvarlama
+
+	//float sayiyi asagi yuvarlama
+	x=floor(x);	
 	printf("floor x: %f \n", x); 
-	x=ceil(2.3);	// yukaru yuvarlama
+
+	//float sayiyi yukari yuvarlama
+	x=ceil(2.3);	
 	printf("ceil x: %f \n\n", x);
 	
 	int a=16;
+
+	//bir sayinin karesini alma
 	int b=sqrt(a);
-	printf("a=%d ve a'nýn karekökü: ", a);
-	printf("%d tür.\n\n", b);
+	printf("a=%d ve a'nin karekÃ¶kÃ¼: %d dir.\n\n", a,b);
 	
 	int taban=3;
 	int us=2;
+
+	//Bir sayinin ussunu alma
 	int sonuc=pow(taban,us);
-	printf("%d^%d = ", taban,us);
-	printf("%d dur. \n", sonuc);
+	printf("%d^%d = %d dur. \n", taban,us,sonuc);
 	
-	
-	
-	
-	
-	getch();
+	return 0;
 }
